@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./sections/head.ejs') %> 
+
+<body>
+<div class="container">
+ 
+    <%- include('./sections/header.ejs') %> 
+
+   <div class="main">
+    <div class="review">
+        <div class="write-review"><a href="/create">Write a Review</a></div>
+        <div class="read-review"><a href="/reviews">Read All Review</a></div>
+    </div>
+
+
+    <div class="menu-img">
+
+        <div class="food">
+            <div class="food-items">
+                <img src="./img/chicken.jpg" width="400" height="250" alt=""> 
+            </div>
+            <p>Chicken</p>
+        </div>
+
+        <div class="food">
+        <div class="food-items">
+            <img src="./img/combinaison.jpg" width="400" height="250" alt="">
+        </div>
+            <p>combinaison</p>
+        </div>
+
+        <div class="food"> 
+            <div class="food-items">
+                <img src="./img/meat.jpg" width="400" height="220" alt="">
+            </div>
+            <p>Meat</p>
+        </div>
+
+
+        <div class="food">
+            <div class="food-items"><img src="./img/porc.jpg" width="400" height="250" alt=""></div>
+            <p>Porc</p>
+        </div>
+
+        <div class="food">
+            <div class="food-items"><img src="./img/salmon.jpg" width="400" height="250" alt=""></div>
+            <p>Salmon</p>
+        </div>
+
+        <div class="food">
+            <div class="food-items"><img src="./img/sardinesGrilled.jpg" width="400" height="250" alt=""></div>
+            <p>Grilled Sardine</p>
+        </div>
+    </div>
+      
+        
+      </div>
+     
+      <%- include('./sections/footer.ejs') %>
+
+</div>
+
+<script src="./menu.js"></script>
+</body>
+</html>

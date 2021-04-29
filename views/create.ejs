@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./sections/head.ejs') %>
+
+<body>
+<div class="container">
+ 
+    <%- include('./sections/header.ejs') %>
+
+   <div class="main">
+    
+    <div class="space">
+        <p>Your comments is important to us. please leave your comments in the comment box.</p>
+     </div>
+
+    <div class="create">
+        <form action="/reviews" method="POST">
+           <label class="label" for="name">Your Name:</label> <br>
+           <input type="text" id="name" name="name" required><br>
+           <label class="label" for="choice" >Plate of Choice:</label><br>
+           <input type="text" id="choice" name="choice" required><br>
+           <label class="label" for="body"> Your Review:</label><br>
+           <textarea  id="body" name="body"  cols="30" rows="10" required></textarea><br>
+           <button class="submit">Submit</button>
+
+        </form>
+    </div>
+      
+           
+    </div>
+
+    <%- include('./sections/footer.ejs') %>
+
+</div>
+<script src="./menu.js"></script>
+</body>
+</html>
