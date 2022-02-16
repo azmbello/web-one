@@ -11,8 +11,9 @@ const app = express();
 const bdURI = 'mongodb+srv://loupgarou:test1234@discuss1.qenca.mongodb.net/az_data_2?retryWrites=true&w=majority'
 
 // use mongoose to connect to database 
+const port = process.env.port || 3000;
 mongoose.connect(bdURI, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(result => app.listen(4000))
+.then(result => app.listen(port))
 .catch(err => console.log(err))
 
 
